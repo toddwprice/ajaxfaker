@@ -10,7 +10,7 @@ app.get('/', function(request, response) {
 		currentTime: moment().format('lll')
 	}
 	setTimeout(function() {
-		response.send(data);
+		response.json(data);
 	}, wait);
 });
 
